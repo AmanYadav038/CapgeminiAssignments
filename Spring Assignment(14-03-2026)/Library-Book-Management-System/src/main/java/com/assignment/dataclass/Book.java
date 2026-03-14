@@ -28,4 +28,14 @@ public class Book {
 		System.out.println("Title: "+title);
 		System.out.println("Author: "+author);
 	}
+
+	public Book(int bookId, String title, String author) {
+		super();
+		this.bookId = bookId;
+		this.title = title;
+		this.author = author;
+	}
+	public Book(){
+		
+	}
 }
