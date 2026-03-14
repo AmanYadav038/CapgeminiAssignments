@@ -6,6 +6,19 @@
 
 
 	<bean id="book" class="com.assignment.dataclass.Book">
+		<constructor-arg name="bookId" value="101"/>
+		<constructor-arg name="author" value="Rod Johnson"/>
+		<constructor-arg name="title" value="Spring Framework"/>
+	</bean>
+	
+	<bean id="librarian" class="com.assignment.dataclass.Librarian">
+		<constructor-arg name="librarianId" value="12345"/>
+		<constructor-arg name="name" value="Amit"/>
+		<constructor-arg name="book" ref="book"/>
+	</bean>
+	
+	
+	<!--<bean id="book" class="com.assignment.dataclass.Book">
 		<property name="bookId" value="101"/>
 		<property name="author" value="Rod Johnson"/>
 		<property name="title" value="Spring Framework"/>
@@ -15,5 +28,5 @@
 		<property name="librarianId" value="12345"/>
 		<property name="name" value="Amit"/>
 		<property name="book" ref="book"/>
-	</bean>
+	</bean>-->
 </beans>
