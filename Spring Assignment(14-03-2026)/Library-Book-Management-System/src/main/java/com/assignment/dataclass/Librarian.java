@@ -28,4 +28,14 @@ public class Librarian {
 		System.out.println("Librarian Name:"+name);
 		book.displayBookDetails();
 	}
+
+	public Librarian(int librarianId, String name, Book book) {
+		super();
+		this.librarianId = librarianId;
+		this.name = name;
+		this.book = book;
+	}
+	public Librarian() {
+		
+	}
 }
